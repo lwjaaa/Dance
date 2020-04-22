@@ -1,0 +1,58 @@
+/* pages/profile/childComps/userInfor/user-infor.wxss */
+.user-infor{
+    padding: 0px 30rpx 10rpx 30rpx;
+    background: #16181C;
+    color: #DCDDE4;
+}
+.user-infor .top{
+    padding-top: 30rpx;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+.user-infor .top .user-pic{
+    position: relative;
+    top: -60rpx;
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    background: #ddd;
+    margin-right: 60rpx;
+}
+.user-infor .top .btn-follow{
+    width: 300rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    background: #F8673E;
+}
+.user-infor .bottom{
+    transform: translateY(-20rpx);
+}
+
+.name{
+    transform: translateY(-40rpx);
+    font-size: 26rpx;
+}
+
+.name .username{
+    font-size: 50rpx;
+    font-weight: 500;
+    padding-bottom: 15rpx;
+}
+
+.des{
+    padding-bottom: 20rpx;
+}
+
+.tag{
+    padding-bottom: 20rpx;
+}
+
+.user-data{
+    display: flex;
+}
+
+.user-data text{
+    margin-right: 20rpx;
+}

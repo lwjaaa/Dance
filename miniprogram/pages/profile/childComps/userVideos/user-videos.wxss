@@ -1,0 +1,44 @@
+/* pages/profile/childComps/userVieos/user-videos.wxss */
+.user-videos{
+    color: #DCDDE4;
+    background: #16181C;
+}
+.tab-control{
+    position: relative;
+    display: flex;
+    position: sticky;
+    background: #16181C;
+    top: 0;
+}
+.tab-control view{
+    box-sizing: border-box;
+    width: 33.333%;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-weight: 500;
+    font-size: 30rpx;
+    text-align: center;
+}
+.tab-control .bar{
+    position: absolute;
+    width: 33.333%;
+    height: 5px;
+    background: rgb(255, 187, 0);
+    bottom: 0;
+    transition: all .3s;
+}
+/* .tab-control view.active{
+    border-bottom: 5px solid rgb(255, 187, 0);
+} */
+
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.videos .video{
+    width: 250rpx;
+    height: 350rpx;
+    background: #eee;
+    box-sizing: border-box;
+    border: 1px solid #000;
+}

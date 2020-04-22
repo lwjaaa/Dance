@@ -1,0 +1,21 @@
+<!-- pages/profile/childComps/userVieos/user-videos.wxml -->
+<view class="user-videos">
+    <view class="tab-control">
+        <view class="{{tabIndex===0 ? 'active' : ''}}" bind:tap="switchTab" data-type="{{'prod'}}" data-index="{{0}}">
+            作品
+        </view>
+        <view class="{{tabIndex===1 ? 'active' : ''}}" bind:tap="switchTab" data-type="{{'renc'}}" data-index="{{1}}">
+            动态
+        </view>
+        <view class="{{tabIndex===2 ? 'active' : ''}}" bind:tap="switchTab" data-type="{{'like'}}" data-index="{{2}}">
+            喜欢
+        </view>
+        <view class="bar" style="transform:translateX({{tabIndex * 100}}%)"></view>
+    </view>
+    <!-- <swiper style="height:100%">
+        <swiper-item style="height:100%"></swiper-item>
+    </swiper> -->
+    <view class="videos">
+        <view class="video" wx:for="{{videos}}" wx:key="id"></view>
+    </view>
+</view>

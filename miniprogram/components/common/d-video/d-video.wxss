@@ -1,0 +1,14 @@
+/* components/common/d-video/d-video.wxss */
+.d-video{
+    position: absolute;
+    top: 0;
+    bottom: 100rpx;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #000;
+}
+
+.d-video .video{
+    width: 100%;
+}

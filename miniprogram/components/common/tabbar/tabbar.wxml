@@ -1,0 +1,4 @@
+<cover-view class="tabbar">
+    <navigator target="self" class="bar" url="/pages/index/index" open-type="switchTab">Tab</navigator>
+    <navigator target="self" class="bar" url="/pages/profile/profile" open-type="switchTab">Tab</navigator>
+</cover-view>

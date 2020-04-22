@@ -1,0 +1,6 @@
+<!--miniprogram/pages/index/index.wxml-->
+
+
+<d-video />
+
+<tabbar />

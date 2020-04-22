@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "user-infor":"./childComps/userInfor/user-infor",
+    "user-videos": "./childComps/userVideos/user-videos"
+  },
+  "backgroundColor": "#F6F6F6",
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#16181C",
+  "navigationBarTitleText": "我的",
+  "navigationBarTextStyle": "white"
+}
