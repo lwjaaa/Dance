@@ -4,22 +4,24 @@
     z-index: 5000;
     display: flex;
     width: 100%;
-    width: 100vw;
+    /* width: 100vw; */
     height: 100rpx;
+    box-sizing: border-box;
+    box-shadow: 0 0 4px  rgba(0, 0, 0, .3);
     bottom: 0;
     left: 0;
     right: 0;
     font-weight: 600;
     font-size: 32rpx;
-    background:rgba(0, 0, 0, .5)
+    background:#fff;
 }
 .tabbar .bar{
     flex: 1 1 auto;
-    color: #fff;
+    color: #777;
     text-align: center;
     height: 100%;
     line-height: 100rpx;
 }
 .tabbar .tabbar-active{
-    color: #01DC63;
+    color: #f40;
 }

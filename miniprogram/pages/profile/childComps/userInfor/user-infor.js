@@ -1,5 +1,6 @@
 // pages/profile/childComps/userInfor/user-infor.js
 Component({
+  
   /**
    * 组件的属性列表
    */

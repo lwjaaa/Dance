@@ -2,6 +2,17 @@ import {deleteOneFile} from "./file.js"
 const db = wx.cloud.database()
 const videoCols = db.collection('videos')
 
+// 添加
+export function postVideo(postData) {
+
+  return videoCols.add({
+    // data 字段表示需新增的 JSON 数据
+    data: {
+      ...postData,
+    }
+  })
+}
+
 export function removeVideo(_id,fileID) {
   return new Promise((resolve, reject) => {
     wx.showModal({

@@ -26,6 +26,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    routeToDetail(e){
+      console.log(e.currentTarget.dataset.video)
+      
+    },
     switchTab(e) {
       let index = e.currentTarget.dataset.index
       let type = e.currentTarget.dataset.type

@@ -5,7 +5,7 @@
   },
   "backgroundColor": "#F6F6F6",
   "backgroundTextStyle": "light",
-  "navigationBarBackgroundColor": "#16181C",
+  "navigationBarBackgroundColor": "#ffffff",
   "navigationBarTitleText": "我的",
-  "navigationBarTextStyle": "white"
+  "navigationBarTextStyle": "black"
 }

@@ -1,11 +1,13 @@
 /* miniprogram/pages/profile/profile.wxss */
 page{
     --color-text:#f00;
-    --color-bg:#131629;
+    --color-bg:#fff;
+    --color-make:#BFC7DA;
     background: #fff;
+    margin-bottom: 100rpx;
 }
 .profile .bg{
     width: 100vw;
     height: 100rpx;
-    background: var(--color-bg);
+    background: var(--color-make);
 }

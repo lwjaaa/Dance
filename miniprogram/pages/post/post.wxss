@@ -1,27 +1,75 @@
 /* pages/post/post.wxss */
 
 page{
-    --color-bg:#003641;
+    --color-bg:#f6f6f6;
     --color-text:#01DC63;
     --color-style:#01DC63;
-    background: var(--color-bg);
+    background: #fff;
+}
+.page{
+    position: absolute;
+    top: 0;
+    bottom: 100rpx;
+    left: 0;
+    right: 0;
+    padding: 0 40rpx;
+}
+.top{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid #aaa;
 }
 
-.btn-choose{
+.top .img-post{
+    flex: 0 0 auto;
+    width: 270rpx;
+    min-width: 270rpx;
+    height: 480rpx;
+    background: #aaa;
+}
+.top .content{
+    max-width: 400rpx;
     box-sizing: border-box;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 150rpx;
+    flex: 0 0 auto;
+    padding: 20rpx;
+}
+/* 标题 */
+.top .content .title{
+    padding: 20rpx 0 20rpx 20rpx;
+    border-bottom: 1px solid #aaa;
+}
+/* 描述 */
+.top .content .des{
+    padding: 40rpx 0 20rpx 20rpx;
+}
+/*  */
+.type{
+    padding: 30rpx 0;
+    border-bottom: 1px solid #ccc;
+}
+.bottom{
+    position: absolute;
+    left: 0;
+    right: 0;
+    padding-bottom: 30rpx;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+.btn{
+    box-sizing: border-box;
     background: var(--color-style);
     border-radius: 50%;
     text-align: center;
     width: 120rpx;
     height: 120rpx;
     line-height: 120rpx;
-    padding: 0;
-    margin: 0;
     color: #fff;
-    font-size: 34rpx;
+    font-size: 28rpx;
     font-weight: 600;
+    margin: 0 20rpx;
+}
+.btn-post{
+    background: #f40;
 }

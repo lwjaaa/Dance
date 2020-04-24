@@ -1,8 +1,8 @@
 <!--miniprogram/pages/index/index.wxml-->
 
 
+<!-- <d-video />
 <d-video />
-<d-video />
-<d-video />
+<d-video /> -->
 
-<tabbar />
+<tabbar tab="{{'/pages/index/index'}}" />

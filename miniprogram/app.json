@@ -2,14 +2,15 @@
   "pages": [
     "pages/index/index",
     "pages/profile/profile",
-    "pages/post/post"
+    "pages/post/post",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#003641",
+    "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "page",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
   "style": "v2",

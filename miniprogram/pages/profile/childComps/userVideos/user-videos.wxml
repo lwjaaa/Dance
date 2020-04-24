@@ -19,8 +19,14 @@
         <view class="video" 
         wx:for="{{videos}}" wx:key="id"
         bind:longpress="remove"
+        bind:tap="routeToDetail"
+        data-video="{{item}}"
         data-id="{{item._id}}"
         data-file="{{item.fileID}}"
-        >{{item._id}}</view>
+        >
+            <image src="{{item.imgurl}}" mode="widthFix" style="width:100%;"></image>
+            <view class="title">{{item.title}}</view>
+        
+        </view>
     </view>
 </view>

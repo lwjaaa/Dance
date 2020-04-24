@@ -1,10 +1,47 @@
 <!--pages/post/post.wxml-->
 <view class="page">
 
-    <image src="{{postImg}}"></image>
+    <view class="top">
 
-    <view class="btn-choose" size="mini"
-    bind:tap="chooseVideo">选择</view>
+        <view class="content">
+            <view class="title">
+              <input model:value="{{title}}" placeholder="输入标题"></input>
+            </view>
+
+            <view class="des">
+              <textarea model:value="{{des}}"  placeholder="写下你现在的想法吧" />
+              <!-- <input  placeholder="写下你现在的想法吧"></input> -->
+            </view>
+        </view>
+
+        <image src="{{postImg}}" class="img-post"></image>
+
+
+    </view>
+
+    <view class="type">
+        <input model:value="{{type}}" placeholder="输入分类"></input>
+    </view>
+
+    <view class="tags type">
+        <input model:value="{{type}}" placeholder="输入标签"></input>
+    </view>
+
+    <view class="geo type">
+        <input model:value="{{type}}" placeholder="输入定位"></input>
+    </view>
+
+
+    <text>{{progress}}</text>
+
+    <view class="bottom">
+        <view class="btn btn-choose" 
+    bind:tap="chooseVideo">{{video ? '换一个' : '选视频'}}</view>
+
+    <view class="btn btn-post" 
+    wx:if="{{postImg && video}}"
+    bind:tap="post" >发布</view>
+    </view>
 </view>
 
 <tabbar tab="{{'/pages/post/post'}}" />

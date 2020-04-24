@@ -1,8 +1,9 @@
 /* pages/profile/childComps/userInfor/user-infor.wxss */
 .user-infor{
     padding: 0px 30rpx 10rpx 30rpx;
-    --color-text:#EBEDED;
-    --color-bg:#131629;
+    --color-text:#424242;
+    --color-bg:#f6f6f6;
+    --color-make:#BFC7DA;
     background: var(--color-bg);
     color: var(--color-text);
 }

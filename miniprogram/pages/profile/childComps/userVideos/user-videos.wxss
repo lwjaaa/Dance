@@ -1,7 +1,7 @@
 /* pages/profile/childComps/userVieos/user-videos.wxss */
 .user-videos{
-    --color-text:#EBEDED;
-    --color-bg:#131629;
+    --color-text:#424242;
+    --color-bg:#f6f6f6;
     background: var(--color-bg);
     color: var(--color-text);
 }
@@ -9,13 +9,14 @@
     position: relative;
     display: flex;
     position: sticky;
-    background: #292A3C;
+    background: #fff;
     top: 0;
 }
 .tab-control view{
     box-sizing: border-box;
     width: 33.333%;
     height: 80rpx;
+    border-top: 1px solid #d5d5d5;
     line-height: 80rpx;
     font-weight: 500;
     font-size: 30rpx;
@@ -35,6 +36,8 @@
     flex-wrap: wrap;
 }
 .videos .video{
+    position: relative;
+    overflow: hidden;
     width: 250rpx;
     height: 350rpx;
     background: var(--color-bg);
@@ -44,4 +47,13 @@
 }
 .videos .video:nth-child(3n){
     border-right: none;
+}
+
+.videos .video .title{
+    position: absolute;
+    top: 300rpx;
+    left: 0;
+    z-index: 2;
+    color: #fff;
+    background: rgba(0, 0, 0, .5);
 }

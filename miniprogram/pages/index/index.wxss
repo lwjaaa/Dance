@@ -1,1 +1,6 @@
 /* miniprogram/pages/index/index.wxss */
+page{
+  --color-bg:#f6f6f6;
+  --color-text:#424242;
+  background: #f6f6f6
+}
