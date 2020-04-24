@@ -1,10 +1,23 @@
 <!-- components/common/d-video/d-video.wxml -->
-<view class="d-video" bindtap="handlePlay">
-    <video class="video" src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400" 
-  id="video"
-  autoplay
-  show-center-play-btn="{{true}}"
-  controls="{{false}}"
-  show-progress="{{false}}"
-  loop></video>
+<view class="d-video" 
+bindtouchstart="startTouch"
+bindtouchmove="moveTouch"
+capture-catch:touchend="endTouch"
+>
+  <video class="video" 
+  src="http://v3-dy-a.ixigua.com/8a8184d2d533a31f9d96ab4097204ab6/5ea1e2aa/video/tos/cn/tos-cn-ve-15/6c44ebdc364b4b038bc4390df55e15a0/?a=1128&br=0&bt=770&cr=0&cs=0&dr=0&ds=3&er=&l=202004240146070100140400383A56E338&lr=aweme&qs=0&rc=amZuanBlbTpvczMzPGkzM0ApaDo2OjM0aWQ4NzQ0PGc1Z2dwaW5obC8vYjBfLS1eLS9zcy8uNi00LTM0MDViXy01MmA6Yw%3D%3D&vl=&vr=" 
+  id="video" autoplay="{{false}}" 
+  controls
+  show-center-play-btn="{{true}}" 
+ show-progress="{{false}}" loop></video>
+  <cover-view class="act-bar">
+    <cover-view class="btn">点赞</cover-view>
+    <cover-view class="btn">评论</cover-view>
+    <cover-view class="btn">更多</cover-view>
+  </cover-view>
+  <!-- <cover-view class="btn-play">
+    播放
+  </cover-view> -->
+
+  <cover-view class="menu" hidden="{{!showMenu}}" catchtap="handleMenu">菜单</cover-view>
 </view>

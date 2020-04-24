@@ -1,6 +1,6 @@
 //app.js
 App({
-  onLaunch: function () {
+  onLaunch: function() {
     if (!wx.cloud) {
       console.error('请使用 2.2.3 或以上的基础库以使用云能力')
     } else {
@@ -14,7 +14,38 @@ App({
       })
     }
 
-    this.globalData = {}
+    try {
+      let _openid = wx.getStorageSync('_openid')
+      
+      if (!_openid) {
+        wx.cloud.callFunction({
+          name: 'login',
+          success: res => {
+            console.log("登陆", res.result.openid, res.result)
+            this.globalData = {
+              _openid: res.result.openid,
+            }
+            try {
+              wx.setStorageSync('_openid', res.result.openid)
+            } catch (e) {
+              console.log("set设置缓存失败")
+            }
+          }
+        })
+      }else{
+        this.globalData = {
+          _openid,
+        }
+        console.log("之前登录过", this.globalData._openid)
+
+      }
+
+    } catch (e) {
+
+    }
+
+
+
 
   }
 })

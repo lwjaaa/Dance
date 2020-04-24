@@ -56,6 +56,12 @@
 					"pathName": "pages/profile/profile",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "post",
+					"pathName": "pages/post/post",
+					"scene": null
 				}
 			]
 		}

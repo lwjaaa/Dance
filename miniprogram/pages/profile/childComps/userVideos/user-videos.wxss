@@ -1,13 +1,15 @@
 /* pages/profile/childComps/userVieos/user-videos.wxss */
 .user-videos{
-    color: #DCDDE4;
-    background: #16181C;
+    --color-text:#EBEDED;
+    --color-bg:#131629;
+    background: var(--color-bg);
+    color: var(--color-text);
 }
 .tab-control{
     position: relative;
     display: flex;
     position: sticky;
-    background: #16181C;
+    background: #292A3C;
     top: 0;
 }
 .tab-control view{
@@ -27,9 +29,6 @@
     bottom: 0;
     transition: all .3s;
 }
-/* .tab-control view.active{
-    border-bottom: 5px solid rgb(255, 187, 0);
-} */
 
 .videos{
     display: flex;
@@ -38,7 +37,11 @@
 .videos .video{
     width: 250rpx;
     height: 350rpx;
-    background: #eee;
+    background: var(--color-bg);
     box-sizing: border-box;
-    border: 1px solid #000;
+    border-bottom: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+}
+.videos .video:nth-child(3n){
+    border-right: none;
 }

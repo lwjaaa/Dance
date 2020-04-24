@@ -1,4 +1,16 @@
-<cover-view class="tabbar">
-    <navigator target="self" class="bar" url="/pages/index/index" open-type="switchTab">Tab</navigator>
-    <navigator target="self" class="bar" url="/pages/profile/profile" open-type="switchTab">Tab</navigator>
-</cover-view>
+<view class="tabbar">
+    <!-- <view class="bar" bind:tap="switchTab" 
+    data-url="{{'/pages/index/index'}}"
+    data-index="{{0}}">tab</view>
+    <view class="bar"  
+    data-url="{{'/pages/profile/profile'}}"
+    data-index="{{1}}">tab</view> -->
+
+    <block wx:for="{{tabbar}}" wx:key="url">
+        <view class="bar {{tab === item.url ? 'tabbar-active' : '' }}" 
+        bind:tap="switchTab"
+        data-index="{{item.index}}" data-url="{{item.url}}">
+            <text>{{item.text}}</text>
+        </view>
+    </block>
+</view>

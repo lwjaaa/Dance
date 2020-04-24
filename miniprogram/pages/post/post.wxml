@@ -1,0 +1,10 @@
+<!--pages/post/post.wxml-->
+<view class="page">
+
+    <image src="{{postImg}}"></image>
+
+    <view class="btn-choose" size="mini"
+    bind:tap="chooseVideo">选择</view>
+</view>
+
+<tabbar tab="{{'/pages/post/post'}}" />

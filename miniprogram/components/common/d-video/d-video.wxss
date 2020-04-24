@@ -1,14 +1,50 @@
 /* components/common/d-video/d-video.wxss */
 .d-video{
-    position: absolute;
-    top: 0;
-    bottom: 100rpx;
-    left: 0;
-    right: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     width: 100vw;
     background: #000;
+    /* border: 10px solid #00f; */
+    box-sizing: border-box;
 }
 
 .d-video .video{
-    width: 100%;
+    width: 750rpx;
+    height: 1100rpx;
+}
+
+.act-bar{
+    position: absolute;
+    right: 40rpx;
+    bottom: 100rpx;
+}
+.act-bar .btn{
+    width: 100rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    background: rgba(255, 0, 0, .5);
+    margin-bottom: 20rpx;
+    border-radius: 50%;
+}
+.btn-play{
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translateX(-50%);
+    background: rgba(200, 200, 200, .5);
+    color: #000;
+    width: 150rpx;
+    height: 150rpx;
+}
+.menu{
+    background: #fff;
+    width: 400rpx;
+    height: 100rpx;
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translateX(-50%);
 }

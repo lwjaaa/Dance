@@ -1,6 +1,7 @@
 /* components/common/tabbar/tabbar.wxss */
 .tabbar{
     position: fixed;
+    z-index: 5000;
     display: flex;
     width: 100%;
     width: 100vw;
@@ -8,7 +9,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, .8)
+    font-weight: 600;
+    font-size: 32rpx;
+    background:rgba(0, 0, 0, .5)
 }
 .tabbar .bar{
     flex: 1 1 auto;
@@ -16,4 +19,7 @@
     text-align: center;
     height: 100%;
     line-height: 100rpx;
+}
+.tabbar .tabbar-active{
+    color: #01DC63;
 }

@@ -16,6 +16,11 @@
         <swiper-item style="height:100%"></swiper-item>
     </swiper> -->
     <view class="videos">
-        <view class="video" wx:for="{{videos}}" wx:key="id"></view>
+        <view class="video" 
+        wx:for="{{videos}}" wx:key="id"
+        bind:longpress="remove"
+        data-id="{{item._id}}"
+        data-file="{{item.fileID}}"
+        >{{item._id}}</view>
     </view>
 </view>

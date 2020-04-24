@@ -1,11 +1,15 @@
 // miniprogram/pages/profile/profile.js
+const app = getApp()
+const _openid = app.globalData._openid
+import {getUserVideos} from "../../network/videos.js"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    tabIndex:0
+    tabIndex:0,
+    userVideos:[]
 
   },
   changeVideos(op){
@@ -21,6 +25,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(_openid)
+    getUserVideos(_openid).then(res =>{
+      console.log('用户视频',res.data)
+      this.setData({
+        userVideos:res.data
+      })
+    })
   },
 
   /**

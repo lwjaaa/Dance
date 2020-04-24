@@ -1,8 +1,10 @@
 /* pages/profile/childComps/userInfor/user-infor.wxss */
 .user-infor{
     padding: 0px 30rpx 10rpx 30rpx;
-    background: #16181C;
-    color: #DCDDE4;
+    --color-text:#EBEDED;
+    --color-bg:#131629;
+    background: var(--color-bg);
+    color: var(--color-text);
 }
 .user-infor .top{
     padding-top: 30rpx;
@@ -16,7 +18,7 @@
     width: 150rpx;
     height: 150rpx;
     border-radius: 50%;
-    background: #ddd;
+    background: #aaa;
     margin-right: 60rpx;
 }
 .user-infor .top .btn-follow{

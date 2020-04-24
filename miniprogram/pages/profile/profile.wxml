@@ -1,7 +1,9 @@
 <view class="profile">
   <view class="bg"></view>
   <user-infor />
-  <user-videos tabIndex="{{tabIndex}}" bind:switch-tab="changeVideos" />
+  <user-videos 
+  videos="{{userVideos}}"
+  tabIndex="{{tabIndex}}" bind:switch-tab="changeVideos" />
 
   <tabbar />
 </view>
