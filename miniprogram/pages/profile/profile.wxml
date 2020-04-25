@@ -5,5 +5,5 @@
   videos="{{userVideos}}"
   tabIndex="{{tabIndex}}" bind:switch-tab="changeVideos" />
 
-  <tabbar tab="{{'/pages/profile/profile'}}" />
+  <!-- <tabbar tab="{{'/pages/profile/profile'}}" /> -->
 </view>

@@ -14,7 +14,9 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    fileid:{
+      type:String
+    }
   },
   attached(){
     video = wx.createVideoContext("video", this)

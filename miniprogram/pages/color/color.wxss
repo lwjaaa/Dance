@@ -1,0 +1,62 @@
+/* pages/color/color.wxss */
+page{
+  background: #f6f6f6;
+}
+.show{
+    width: 100vw;
+    height: 350rpx;
+}
+.show .title,
+.show .content{
+    padding: 30rpx 50rpx;
+}
+.show .title{
+    font-size: 34rpx;
+    font-weight: 600;
+}
+.btns{
+    margin-top: 20rpx;
+    border-top: 1rpx solid #ddd;
+    padding: 20rpx 20rpx;
+    display: flex;
+    justify-content: space-around;
+}
+.btns>view{
+    flex: 1 1   auto;
+    margin: 0 10rpx;
+    text-align: center;
+    line-height: 100rpx;
+    height: 100rpx;
+    font-weight: 600;
+    border: 1rpx solid pink;
+}
+.btns>view.roll{
+    max-width: 120rpx;
+    min-width: 120rpx;
+    width: 120rpx;
+    height: 120rpx;
+    line-height: 120rpx;
+    border-radius: 50%;
+}
+.nav{
+    display: flex;
+    background: #fff;
+}
+.nav>view{
+    flex: 1 1   auto;
+    margin: 0 40rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    color: #424242;
+    border-bottom: 10rpx solid pink;
+}
+
+.choose{
+    position: fixed;
+    box-sizing: border-box;
+    padding: 30rpx;
+    bottom: 0;
+    width: 100vw;
+    border: 5rpx solid pink;
+}

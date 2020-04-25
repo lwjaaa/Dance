@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/profile/profile",
     "pages/post/post",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/color/color"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -15,21 +16,40 @@
   "sitemapLocation": "sitemap.json",
   "style": "v2",
   "tabBar": {
-    "custom": true,
     "list": [
       {
-        "pagePath": "pages/index/index"
+        "pagePath": "pages/color/color",
+        "text": "颜色",
+        "iconPath": "./assets/icon/index.png",
+        "selectedIconPath": "./assets/icon/index.png",
+        "selectedColor": "#f40"
       },
       {
-        "pagePath": "pages/profile/profile"
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./assets/icon/index.png",
+        "selectedIconPath": "./assets/icon/index.png",
+        "selectedColor": "#f40"
       },
       {
-        "pagePath": "pages/post/post"
+        "pagePath": "pages/post/post",
+        "text": "发布",
+        "iconPath": "/assets/icon/post.png",
+        "selectedIconPath": "/assets/icon/post.png",
+        "selectedColor": "#f40"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "/assets/icon/profile.png",
+        "selectedIconPath": "/assets/icon/profile.png",
+        "selectedColor": "#f40"
       }
+      
     ]
   },
   "usingComponents": {
-    "tabbar":"/components/common/tabbar/tabbar",
+    "tabbar": "/components/common/tabbar/tabbar",
     "d-video": "/components/common/d-video/d-video"
   }
 }

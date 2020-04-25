@@ -1,0 +1,56 @@
+
+<view class="white show" 
+    style="background:{{bgColor}}">
+    <view class="title"
+    style="color:{{ttColor}}">这是一个标题</view>
+    <view class="content" style="color:{{ttColor}}">
+        这是文本内容。
+        这是文本内容。
+        这是文本内容。这是文本内容。
+        这是文本内容。
+        这是文本内容。这是文本内容。
+        这是文本内容。
+        这是文本内容。这是文本内容。
+        这是文本内容。
+        这是文本内容。
+    </view>
+</view>
+
+<view class="white show" 
+    style="background:{{ttColor}}">
+    <view class="title"
+    style="color:{{bgColor}}">这是一个标题</view>
+    <view class="content" style="color:{{bgColor}}">
+        这是文本内容。这是文本内容。
+        这是文本内容。
+        这是文本内容。这是文本内容。
+        这是文本内容。
+        这是文本内容。这是文本内容。
+        这是文本内容。
+        这是文本内容。  
+        这是文本内容。
+        这是文本内容。
+    </view>
+</view>
+
+<view class="btns">
+
+    <view class="" style="border: 1rpx solid {{bgColor}};color:{{bgColor}}">按钮</view>
+    <view class="roll" style="border: 1rpx solid {{bgColor}};background:{{bgColor}};color:{{ttColor}}">按钮</view>
+    <view class="" style="border: 1rpx solid {{bgColor}};background:{{bgColor}};color:{{ttColor}}">按钮</view>
+    <view class="roll" style="border: 1rpx solid {{bgColor}};background:{{ttColor}};color:{{bgColor}}">按钮</view>
+
+
+</view>
+
+<view class="nav">
+
+    <view style="border-bottom: 5rpx solid {{bgColor}};">导航</view>
+    <view style="border-bottom: 5rpx solid {{bgColor}};">导航</view>
+    <view style="border-bottom: 5rpx solid {{bgColor}};">导航</view>
+    <view style="border-bottom: 5rpx solid {{bgColor}};">导航</view>
+</view>
+
+<view class="choose" style="border: 5rpx solid {{bgColor}};">
+    <input bindinput="input" bindconfirm="input" type="text" confirm-type="done" placeholder="输入颜色：#000000 或 rgb(255,255,255) 或 pink" />
+</view>

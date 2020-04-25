@@ -1,4 +1,6 @@
-import {deleteOneFile} from "./file.js"
+import {
+  deleteOneFile
+} from "./file.js"
 const db = wx.cloud.database()
 const videoCols = db.collection('videos')
 
@@ -13,36 +15,45 @@ export function postVideo(postData) {
   })
 }
 
-export function removeVideo(_id,fileID) {
-  return new Promise((resolve, reject) => {
-    wx.showModal({
-      title: '确定该删除？',
-      content: '删除后无法恢复',
-      success(res) {
-        if (res.confirm) {
+export async function removeVideo(videoData) {
+  wx.showModal({
+    title: '确定该删除？',
+    content: '删除后无法恢复',
+    success: async function(res) {
+      if (res.confirm) {
+        let imgurl = videoData.imgurl
+        let fileid = videoData.fileid
+        let _id = videoData._id
 
-          console.log('用户点击确定',_id,fileID)
 
-          // 删除云文件
-          deleteOneFile(fileID).then(res => {
-            console.log('删除云文件成功', res.fileList)
+        console.log('用户点击确定', _id)
+        console.log(fileid)
+        console.log(imgurl)
 
-            // 删除数据库
-            videoCols.doc(_id).remove()
-              .then(res => {
-                resolve(res)
-              })
-              .catch(err => {reject(err)})
-
-          }).catch(error => { reject(err)})
-          
-
-        } else if (res.cancel) {
-          console.log('用户点击取消')
+        // 删除云文件
+        let res1 = await deleteOneFile(fileid)
+        let res2 = await deleteOneFile(imgurl)
+        console.log('删除云文件成功', res1, res2)
+        let res3 = await videoCols.doc(_id).remove()
+        console.log('删除数据库成功', res3)
+        if (res1, res2, res) {
+          wx.showToast({
+            title: '删除成功',
+            icon: 'success'
+          })
         }
+
+
+      } else if (res.cancel) {
+        console.log('用户点击取消')
       }
-    })
+    }
   })
+  return {
+    status:200
+  }
+
+
 
 
 

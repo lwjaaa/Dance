@@ -54,6 +54,7 @@ Page({
     }
     wx.showLoading({
       title: `上传中...`,
+      mask:true
     })
     uploadPostFile(video, imgurl, this).then(res => {
 
@@ -84,12 +85,16 @@ Page({
 
   chooseVideo() {
 
-    wx.chooseVideo({
+    wx.chooseMedia({
+      count: 1,
+      mediaType: ['video'],
       sourceType: ['album'],
       compressed: true,
       maxDuration: 60,
-      success: (res) => {
+      success: (media) => {
         // 判断视频长度
+        console.log('选择媒体', media.tempFiles[0])
+        let res = media.tempFiles[0]
         if (res.duration > 60) {
           wx.showModal({
             title: '视频长度太长',
@@ -101,36 +106,12 @@ Page({
 
           const imgurl = res.thumbTempFilePath
           const file = res
-          // console.log(file)
+          console.log(file, imgurl)
 
           this.setData({
             postImg: imgurl,
             video: file
           })
-
-
-          // uploadVideo(file)
-          //   .then(res => {
-          //     console.log('上传成功', res)
-          //     let fileID = res.fileID
-
-          //     postVideo({
-          //       fileID,
-          //       title:"",
-          //       tags:[],
-          //       imgurl:"",
-          //       time: new Date().getTime(),
-          //     }).then(res => {
-          //       console.log('添加视频成功',res)
-          //     }).catch(err => console.log('添加失败',err))
-
-          //   })
-          //   .catch(err => console.log('上传文件失败', err, file))
-
-
-
-
-
 
         }
       },

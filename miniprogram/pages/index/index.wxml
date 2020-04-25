@@ -5,4 +5,4 @@
 <d-video />
 <d-video /> -->
 
-<tabbar tab="{{'/pages/index/index'}}" />
+<!-- <tabbar tab="{{'/pages/index/index'}}" /> -->

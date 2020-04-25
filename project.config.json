@@ -61,6 +61,20 @@
 					"id": -1,
 					"name": "post",
 					"pathName": "pages/post/post",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "detail",
+					"pathName": "pages/detail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "color",
+					"pathName": "pages/color/color",
 					"scene": null
 				}
 			]

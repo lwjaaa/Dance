@@ -11,7 +11,7 @@
 
 .d-video .video{
     width: 750rpx;
-    height: 1100rpx;
+    height: 100%;
 }
 
 .act-bar{

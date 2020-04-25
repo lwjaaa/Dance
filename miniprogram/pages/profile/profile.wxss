@@ -9,5 +9,5 @@ page{
 .profile .bg{
     width: 100vw;
     height: 100rpx;
-    background: var(--color-make);
+    background: #fff;
 }

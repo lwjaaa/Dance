@@ -1,30 +1,30 @@
-// pages/detail/detail.js
+// pages/color/color.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    videoData:null
+    
+      // bgColor:'#08D30D',
+      bgColor:'pink',
+      ttColor:'#FFFFFF',
+      txColor:'#f3f3f3',
+  
+  
   },
-
+  input(e){
+    let color = e.detail.value
+    console.log(color)
+    this.setData({
+      bgColor:color || 'pink'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (option) {
-    // console.log(option)
-    
-    const eventChannel = this.getOpenerEventChannel()
-    // eventChannel.emit('acceptDataFromOpenedPage', { data: 'test' });
-    // eventChannel.emit('someEvent', { data: 'test' });
-    // 监听acceptDataFromOpenerPage事件，获取上一页面通过eventChannel传送到当前页面的数据
-    eventChannel.on('routeToDetail',  (res) => {
-      console.log(res.videoData)
-      this.setData({
-        videoData: res.videoData
-      })
-    })
-    
+  onLoad: function (options) {
+
   },
 
   /**
