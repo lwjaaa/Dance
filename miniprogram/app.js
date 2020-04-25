@@ -3,7 +3,7 @@ App({
   onLaunch: function() {
     wx.setTabBarStyle({
       color: '#888',
-      selectedColor: '#f40',
+      selectedColor: '#FFC0CB',
       // backgroundColor: '#0000FF',
       // borderStyle: 'white'
     })

@@ -1,33 +1,53 @@
 /* pages/profile/childComps/userInfor/user-infor.wxss */
 .user-infor{
-    padding: 0px 30rpx 10rpx 30rpx;
+    padding: 0 40rpx;
     --color-text:#424242;
     --color-bg:#f6f6f6;
     --color-make:#BFC7DA;
-    background: var(--color-bg);
+    background: #fff;
     color: var(--color-text);
 }
 .user-infor .top{
     padding-top: 30rpx;
     display: flex;
+    height: 250rpx;
     position: relative;
     width: 100%;
 }
 .user-infor .top .user-pic{
     position: relative;
-    top: -60rpx;
-    width: 150rpx;
-    height: 150rpx;
+    flex: 0 0 auto;
+    width: 180rpx;
+    max-width: 180rpx;
+    min-width: 180rpx;
+    height: 180rpx;
     border-radius: 50%;
-    background: #aaa;
+    background: pink;
     margin-right: 60rpx;
+    margin-left: 10rpx;
 }
-.user-infor .top .btn-follow{
-    width: 300rpx;
+.user-infor .top .user-right{
+    flex: 1 1 auto;
+}
+.user-infor .top .user-right .user-data{
+    width: 100%;
+    margin-bottom: 30rpx;
+}
+.user-infor .top .btn-follow,
+.user-infor .top .btn-user{
+    width: 100%;
     height: 80rpx;
     line-height: 80rpx;
     text-align: center;
-    background: #F8673E;
+    background: pink;
+    color: #fff;
+    font-weight: 600;
+    font-size: 32rpx;
+}
+.user-infor .top .btn-user{
+    background: #fff;
+    color: #000;
+    border: 1rpx solid #000;
 }
 .user-infor .bottom{
     transform: translateY(-20rpx);

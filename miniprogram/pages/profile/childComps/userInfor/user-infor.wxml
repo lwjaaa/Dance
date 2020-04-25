@@ -1,31 +1,34 @@
 <view class="user-infor">
   <view class="top">
     <view class="user-pic"></view>
-    <view class="btn btn-follow">关注</view>
+    <view class="user-right">
+      <view class="user-data">
+        <view>
+          <text>点赞</text>
+          <text>{{userInfor.likes}}</text>
+        </view>
+        <view>
+          <text>粉丝</text>
+          <text>{{userInfor.fans.length}}</text>
+        </view>
+        <view>
+          <text>关注</text>
+          <text>{{userInfor.follows.length}}</text>
+        </view>
+      </view>
+      <!-- <view class="btn btn-follow">关注</view> -->
+      <view class="btn btn-user" bind:tap="editUserInfor">编辑资料</view>
+    </view>
   </view>
-
   <view class="name">
-    <view class="username">小何</view>
-    <view>账号: winfyho1010</view>
+    <view class="username">{{userInfor.username}}</view>
+    <view>账号: {{userInfor.uid}}</view>
   </view>
-
   <view class="bottom">
-
-    <view class="des">简介</view>
-
+    <view class="des">{{userInfor.des}}</view>
     <view class="tag">
-      <text>25岁</text>
-      <text>厦门</text>
+      <text>{{userInfor.age}}</text>
+      <text>{{userInfor.city}}</text>
     </view>
-
-    <view class="user-data">
-      <text>点赞10000.3w</text>
-      <text>关注10000.3w</text>
-      <text>粉丝10000.3w</text>
-    </view>
-
   </view>
-
-
-
 </view>
