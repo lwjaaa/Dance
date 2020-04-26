@@ -13,6 +13,7 @@ page{
     left: 0;
     right: 0;
     padding: 0 40rpx;
+    color: #424242;
 }
 .top{
     box-sizing: border-box;
@@ -20,7 +21,9 @@ page{
     display: flex;
     border-bottom: 1px solid #aaa;
 }
-
+icon{
+    margin-right: 20rpx;
+}
 .top .img-post{
     flex: 0 0 auto;
     width: 270rpx;
@@ -32,22 +35,35 @@ page{
     max-width: 400rpx;
     box-sizing: border-box;
     flex: 0 0 auto;
-    padding: 20rpx;
+    padding: 20rpx 0;
 }
 /* 标题 */
 .top .content .title{
+    display: flex;
     padding: 20rpx 0 20rpx 20rpx;
     border-bottom: 1px solid #aaa;
+    font-weight: 600;
 }
 /* 描述 */
 .top .content .des{
+    display: flex;
     padding: 40rpx 0 20rpx 20rpx;
 }
 /*  */
 .type{
-    padding: 30rpx 0;
     border-bottom: 1px solid #ccc;
 }
+.type .wraper{
+    display: flex;
+    padding: 30rpx 0;
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.type .wraper icon,
+.type .wraper text{
+    display: block;
+}
+
 .bottom{
     position: absolute;
     left: 0;

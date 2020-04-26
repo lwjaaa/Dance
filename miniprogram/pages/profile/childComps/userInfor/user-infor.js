@@ -24,12 +24,13 @@ Component({
   methods: {
     editUserInfor(e){
       console.log(this.data.userInfor)
-      let infor = this.data.userInfor
-      wx.showModal({
-        title: infor.username,
-        content: infor.uid,
+      let _openid = this.data.userInfor._openid
+      wx.navigateTo({
+        url: `/pages/profile_edit/profile_edit?openid=${_openid}`,
       })
-      
+      wx.showLoading({
+        title: '加载中',
+      })
       
     }
   }

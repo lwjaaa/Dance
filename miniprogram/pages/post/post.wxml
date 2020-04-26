@@ -1,16 +1,17 @@
 <!--pages/post/post.wxml-->
 <view class="page">
 
-    <view class="top">
+	<view class="top">
 
-        <view class="content">
-            <view class="title">
-              <input model:value="{{title}}" placeholder="输入标题"></input>
-            </view>
+		<view class="content">
+			<view class="title">
+                <icon type="info" size="{{20}}" color="{{'#aaa'}}"></icon>
+				<input model:value="{{title}}" placeholder="输入标题"></input>
+			</view>
 
-            <view class="des">
-              <textarea model:value="{{des}}"  placeholder="写下你现在的想法吧" />
-              <!-- <input  placeholder="写下你现在的想法吧"></input> -->
+			<view class="des">
+                <icon type="info" size="{{20}}" color="{{'#aaa'}}"></icon>
+				<textarea model:value="{{des}}" placeholder="写下你现在的想法吧" />
             </view>
         </view>
 
@@ -19,20 +20,26 @@
 
     </view>
 
+
     <view class="type">
-        <input model:value="{{type}}" placeholder="输入分类"></input>
+        <picker mode="selector" range="{{typeRange}}" model:value="{{typeIndex}}" >
+            <view class="wraper">
+                <icon type="info" size="{{20}}" color="{{'#aaa'}}"></icon>
+                <text>分类：{{typeRange[typeIndex]}}</text>
+            </view>
+        </picker>
     </view>
 
-    <view class="tags type">
+    <!-- <view class="tags type">
         <input model:value="{{type}}" placeholder="输入标签"></input>
-    </view>
+    </view> -->
 
-    <view class="geo type">
+    <!-- <view class="geo type">
         <input model:value="{{type}}" placeholder="输入定位"></input>
-    </view>
+    </view> -->
 
 
-    <text>{{progress}}</text>
+    <!-- <text>{{progress}}</text> -->
 
     <view class="bottom">
         <view class="btn btn-choose" 
@@ -42,6 +49,10 @@
     wx:if="{{postImg && video}}"
     bind:tap="post" >发布</view>
     </view>
+
+    <!-- <view class="btn btn-post" 
+    bind:tap="_post" >发布</view>
+    </view> -->
 </view>
 
 <!-- <tabbar tab="{{'/pages/post/post'}}" /> -->

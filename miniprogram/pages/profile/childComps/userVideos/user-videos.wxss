@@ -52,9 +52,14 @@
 
 .videos .video .title{
     position: absolute;
-    top: 300rpx;
+    top: 310rpx;
+    width: 100%;
+    height: 30rpx;
+    line-height: 30rpx;
+    text-indent: 30rpx;
     left: 0;
     z-index: 2;
     color: #fff;
-    background: rgba(0, 0, 0, .5);
+    font-size: 28rpx;
+    background: rgba(0, 0, 0, .3);
 }

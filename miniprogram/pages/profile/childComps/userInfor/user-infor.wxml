@@ -5,15 +5,15 @@
       <view class="user-data">
         <view>
           <text>点赞</text>
-          <text>{{userInfor.likes}}</text>
+          <text class="num">{{userInfor.likes}}</text>
         </view>
         <view>
           <text>粉丝</text>
-          <text>{{userInfor.fans.length}}</text>
+          <text class="num">{{userInfor.fans.length}}</text>
         </view>
         <view>
           <text>关注</text>
-          <text>{{userInfor.follows.length}}</text>
+          <text class="num">{{userInfor.follows.length}}</text>
         </view>
       </view>
       <!-- <view class="btn btn-follow">关注</view> -->

@@ -1,0 +1,31 @@
+/* pages/profile_edit/profile_edit.wxss */
+page{
+    background: #f6f6f6;
+    color: #424242;
+}
+.section{
+    display: flex;
+    padding: 40rpx 40rpx;
+    background: #fff;
+    margin-bottom: 10rpx;
+}
+.section>view{
+    height: 40rpx;
+    line-height: 40rpx;
+}
+.section .label{
+    flex: 0 0 auto;
+    width: 200rpx;
+    font-weight: 550;
+}
+.section .input{
+    flex: 1 1 auto;
+}
+.age_sex>view{
+    display: flex;
+    width: 50%;
+}
+.des .input{
+    height: 90rpx;
+    line-height: 30rpx;
+}

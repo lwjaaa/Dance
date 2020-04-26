@@ -31,7 +31,7 @@
 }
 .user-infor .top .user-right .user-data{
     width: 100%;
-    margin-bottom: 30rpx;
+    margin-bottom: 15rpx;
 }
 .user-infor .top .btn-follow,
 .user-infor .top .btn-user{
@@ -46,8 +46,8 @@
 }
 .user-infor .top .btn-user{
     background: #fff;
-    color: #000;
-    border: 1rpx solid #000;
+    color: #666;
+    border: 1rpx solid #666;
 }
 .user-infor .bottom{
     transform: translateY(-20rpx);
@@ -75,7 +75,18 @@
 .user-data{
     display: flex;
 }
-
-.user-data text{
+.user-data>view{
+    width: 33.3333%;
+}
+.user-data>view>text{
+    display: block;
+    width: 100%;
+    text-align: center;
     margin-right: 20rpx;
+}
+.user-data>view>text.num{
+    margin-top: 10rpx;
+    color: #f70;
+    font-size: 36rpx;
+    font-weight: 600;
 }

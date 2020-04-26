@@ -1,0 +1,43 @@
+<!--pages/profile_edit/profile_edit.wxml-->
+<view class="section">
+    <view class="label">用户名</view>
+    <view class="input">{{user.username}}</view>
+</view> 
+
+<view class="section">
+    <view class="label">id</view>
+    <view class="input">{{user.uid}}</view>
+</view> 
+
+<view class="section des">
+    <view class="label">简介</view>
+    <view class="input">{{user.des}}</view>
+</view> 
+
+<view class="section">
+    <view class="label">生日</view>
+    <view class="input">{{user.birthday}}</view>
+</view> 
+<view class="section age_sex">
+    <view>
+        <view class="label">性别</view>
+        <view class="input">{{user.sex === 0 ? '男' : '女'}}</view>
+    </view>
+</view> 
+
+<view class="section">
+    <view class="label">学校</view>
+    <view class="input">{{user.school}}</view>
+</view> 
+
+<view class="section">
+    <view class="label">城市</view>
+    <view class="input">{{user.city}}</view>
+</view> 
+
+<view class="section">
+    <view class="label">注册时间</view>
+    <view class="input">{{user.inittime}}</view>
+</view> 
+
+

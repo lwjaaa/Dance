@@ -75,6 +75,13 @@
 					"id": -1,
 					"name": "color",
 					"pathName": "pages/color/color",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "edit",
+					"pathName": "pages/profile_edit/profile_edit",
 					"scene": null
 				}
 			]

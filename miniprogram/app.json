@@ -4,7 +4,9 @@
     "pages/profile/profile",
     "pages/post/post",
     "pages/detail/detail",
-    "pages/color/color"
+    "pages/color/color",
+    "pages/profile_edit/profile_edit"
+
   ],
   "window": {
     "backgroundColor": "#F6F6F6",

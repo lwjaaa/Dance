@@ -9,7 +9,6 @@ let userModel = {
   school: '大学',
   city: '厦门',
   birthday: '2020-1-1',
-  age: 0,
   sex: 1,
   videos: [],
   fans: [],
@@ -20,7 +19,7 @@ let userModel = {
   wechat_infor: {}
 }
 
-function getUserInfor(_openid) {
+export function getUserInfor(_openid) {
   return userCols.where({
     _openid,
   }).get()

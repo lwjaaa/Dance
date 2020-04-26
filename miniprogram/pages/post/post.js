@@ -18,13 +18,33 @@ Page({
     progress: 0,
     postImg: "",
     video: null,
-    title: "视频的标题",
-    des: "写下你现在的想法",
-    type: "舞蹈",
+    title: "",
+    des: "",
+    
     geo: {},
-    tags: ['hiphop', '街舞']
+    tags: ['舞蹈'],
+    typeRange:[
+      '舞蹈',
+      '街舞',
+      '民族舞'
+    ],
+    typeIndex:0,
   },
-
+  _post(){
+    let postData = {
+      // fileid: "",
+      // imgurl: "",
+      title: this.data.title,
+      des: this.data.des,
+      type: this.data.typeRange[this.data.typeIndex],
+      time: new Date().getTime(),
+      // 位置信息
+      geo: this.data.geo,
+      tags: this.data.tags,
+    }
+    console.log(postData)
+    
+  },
   post() {
 
     let postData = {
@@ -32,7 +52,7 @@ Page({
       imgurl: "",
       title: this.data.title,
       des: this.data.des,
-      type: this.data.type,
+      type: this.data.typeRange[this.data.typeIndex],
       time: new Date().getTime(),
       // 位置信息
       geo: this.data.geo,
@@ -115,10 +135,6 @@ Page({
 
         }
       },
-      fail(err) {
-        console.log(err)
-      },
-
     })
 
   },
