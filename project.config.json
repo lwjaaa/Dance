@@ -82,6 +82,13 @@
 					"id": -1,
 					"name": "edit",
 					"pathName": "pages/profile_edit/profile_edit",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "社区",
+					"pathName": "pages/home/home",
 					"scene": null
 				}
 			]

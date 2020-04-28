@@ -1,0 +1,6 @@
+<view class="search-bar">
+  <view class="bar">
+    <input class="input" placeholder="请输入搜索内容"></input>
+    <view class="btn">搜索</view>
+  </view>
+</view>

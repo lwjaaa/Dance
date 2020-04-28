@@ -1,0 +1,31 @@
+/* miniprogram/pages/home/home.wxss */
+page{
+    --color-bg:pink;
+    background: #fff;
+}
+.header{
+    display: flex;
+    padding: 0 20rpx;
+    height: 100rpx;
+    box-shadow: 5rpx 0 5rpx rgba(0, 0, 0, .3);
+}
+.header .types{
+    flex: 1 1 auto;
+    display: flex;
+    height: 100%;
+}
+.header .types .type-item{
+    height: 100%;
+    line-height: 100rpx;
+    padding: 0 20rpx;
+}
+.header .types .follow{
+    color: pink;
+    font-weight: 600;
+}
+.list{
+    padding: 0 15rpx;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

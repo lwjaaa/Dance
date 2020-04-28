@@ -1,6 +1,69 @@
 /* miniprogram/pages/index/index.wxss */
 page{
-  --color-bg:#f6f6f6;
+  --color-bg:pink;
   --color-text:#424242;
-  background: #f6f6f6
+  background: #f8f8f8;
+  width: 100vw;
+  height: 100vh;
+}
+.page{
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+}
+.header{
+  width: 100%;
+  display: flex;
+  background: #fff;
+}
+.header .search{
+  flex: 1 1 auto;
+}
+.header .shop{
+  flex: 0 0 100rpx;
+  line-height: 100rpx;
+  color: var(--color-bg);
+}
+
+.games{
+  position: absolute;
+  top: 100rpx;
+  bottom: 0;
+  width: 100vw;
+}
+.games .btn{
+  position: absolute;
+  bottom: 30rpx;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #eee;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 10rpx 0rpx rgba(0, 0, 0, .3);
+  opacity: 0.7;
+}
+.games .btn-last{
+  left: 10rpx;
+}
+.games .btn-next{
+  right: 10rpx;
+}
+.games .btn-tap{
+  background: var(--color-bg);
+}
+.games-swiper{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 960rpx;
+}
+.games-swiper-item{
+  display: flex;
+  justify-content: center;
+}
+.games-swiper-item .game-box{
+  position: absolute;
+  /* left: 50% */
 }

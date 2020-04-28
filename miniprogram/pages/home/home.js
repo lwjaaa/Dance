@@ -1,17 +1,11 @@
-// miniprogram/pages/index/index.js
+// miniprogram/pages/home/home.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    games:[
-      {title:"游戏1"},
-      {title:"游戏1"},
-      {title:"游戏1"},
-      {title:"游戏1"},
-      {title:"游戏1"},
-    ]
+
   },
 
   /**

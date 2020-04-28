@@ -1,0 +1,26 @@
+<view class="header">
+
+    <view  class="types">
+        <view class="type-item follow">关注</view>
+        <view class="type-item">古典舞</view>
+        <view class="type-item">街舞</view>
+        <view class="type-item">民族舞</view>
+        <view class="type-item">其他</view>
+
+    </view>
+
+    <search-btn />
+
+</view>
+
+<view class="list">
+    <i-video />
+    <i-video />
+    <i-video />
+    <i-video />
+    <i-video />
+    <i-video />
+    <i-video />
+
+
+</view>

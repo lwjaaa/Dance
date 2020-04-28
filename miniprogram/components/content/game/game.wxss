@@ -1,0 +1,19 @@
+/* components/content/game/game.wxss */
+.game{
+    position: relative;
+    background: rgb(255, 205, 213);
+    width: 540rpx;
+    height: 960rpx;
+}
+.game .btn{
+    position: absolute;
+    width: 200rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    text-align: center;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50rpx;
+    background: rgb(13, 132, 230);
+}

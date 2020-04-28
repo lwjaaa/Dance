@@ -1,8 +1,17 @@
-<!--miniprogram/pages/index/index.wxml-->
-
-
-<!-- <d-video />
-<d-video />
-<d-video /> -->
-
-<!-- <tabbar tab="{{'/pages/index/index'}}" /> -->
+<!-- miniprogram/pages/index/index.wxml -->
+<view class="page">
+    <view class="header">
+        <search-bar class="search" />
+        <view class="shop">商城</view>
+    </view>
+    <view class="games">
+        <swiper class="games-swiper">
+            <swiper-item class="games-swiper-item"  wx:for="{{games}}" wx:key="title">
+                <game class="game-box" game="{{item}}" />
+            </swiper-item>
+            
+        </swiper>
+        <!-- <view hover-class="{{'btn-tap'}}" class="btn btn-last">ls</view> -->
+        <view hover-class="{{'btn-tap'}}" class="btn btn-next">nx</view>
+    </view>
+</view>

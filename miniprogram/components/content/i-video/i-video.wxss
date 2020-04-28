@@ -1,0 +1,25 @@
+/* components/content/i-video/i-video.wxss */
+.i-video{
+    box-sizing: border-box;
+    width: 360rpx;
+    padding: 10rpx;
+}
+.i-video .body{
+    width: 340rpx;
+    height: 450rpx;
+    background: #aaa;
+}
+.i-video .infor{
+    box-sizing: border-box;
+    display: flex;
+    padding: 15rpx 0;
+    height: 130rpx;
+    border-bottom: 1rpx solid #eee;
+}
+.i-video .infor .icon{
+    width: 80rpx;
+    height: 80rpx;
+    margin-right: 20rpx;
+    border-radius: 50%;
+    background: #eee;
+}

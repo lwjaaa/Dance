@@ -1,0 +1,11 @@
+<view class="i-video">
+    <view class="body">
+        
+    </view>
+
+    <view class="infor">
+        <view class="icon"></view>
+        <view class="content">视频标题</view>
+    </view>
+
+</view>

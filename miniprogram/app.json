@@ -5,8 +5,8 @@
     "pages/post/post",
     "pages/detail/detail",
     "pages/color/color",
-    "pages/profile_edit/profile_edit"
-
+    "pages/profile_edit/profile_edit",
+    "pages/home/home"
   ],
   "window": {
     "backgroundColor": "#F6F6F6",
@@ -23,35 +23,42 @@
         "pagePath": "pages/color/color",
         "text": "颜色",
         "iconPath": "./assets/icon/index.png",
-        "selectedIconPath": "./assets/icon/index.png",
-        "selectedColor": "#f40"
+        "selectedIconPath": "./assets/icon/index.png"
       },
+      
       {
         "pagePath": "pages/index/index",
         "text": "首页",
         "iconPath": "./assets/icon/index.png",
-        "selectedIconPath": "./assets/icon/index.png",
-        "selectedColor": "#f40"
+        "selectedIconPath": "./assets/icon/index.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "text": "社区",
+        "iconPath": "./assets/icon/index.png",
+        "selectedIconPath": "./assets/icon/index.png"
       },
       {
         "pagePath": "pages/post/post",
         "text": "发布",
         "iconPath": "/assets/icon/post.png",
-        "selectedIconPath": "/assets/icon/post.png",
-        "selectedColor": "#f40"
+        "selectedIconPath": "/assets/icon/post.png"
       },
       {
         "pagePath": "pages/profile/profile",
         "text": "我的",
         "iconPath": "/assets/icon/profile.png",
-        "selectedIconPath": "/assets/icon/profile.png",
-        "selectedColor": "#f40"
+        "selectedIconPath": "/assets/icon/profile.png"
       }
-      
     ]
   },
   "usingComponents": {
     "tabbar": "/components/common/tabbar/tabbar",
-    "d-video": "/components/common/d-video/d-video"
+    "d-video": "/components/common/d-video/d-video",
+    "i-video": "/components/content/i-video/i-video",
+    "search-bar": "/components/common/search-bar/search-bar",
+    "search-btn": "/components/common/search-btn/search-btn"
+
+
   }
 }

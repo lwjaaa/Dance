@@ -1,0 +1,12 @@
+/* components/common/search-btn/search-btn.wxss */
+.search-btn{
+    width: 100rpx;
+    height: 100rpx;
+    background: rgba(0, 0, 0, .3);
+}
+.search-btn .icon{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 100rpx;
+}
