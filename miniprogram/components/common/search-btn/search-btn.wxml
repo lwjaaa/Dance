@@ -1,4 +1,4 @@
 <!--components/common/search-btn/search-btn.wxml-->
 <view class="search-btn">
-    <view class="icon">搜索</view>
+    <image class="icon" src="/assets/icon/search.png">搜索</image>
 </view>

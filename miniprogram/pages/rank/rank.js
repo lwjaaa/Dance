@@ -1,37 +1,18 @@
-// pages/detail/detail.js
+// miniprogram/pages/rank/rank.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    videoData:null
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (option) {
-    // console.log(option)
-    
-    const eventChannel = this.getOpenerEventChannel()
-    // eventChannel.emit('acceptDataFromOpenedPage', { data: 'test' });
-    // eventChannel.emit('someEvent', { data: 'test' });
-    // 监听acceptDataFromOpenerPage事件，获取上一页面通过eventChannel传送到当前页面的数据
-    eventChannel.on('routeToDetail',  (res) => {
-      console.log(res.videoData)
-      this.setData({
-        videoData: res.videoData
-      })
-    })
-    eventChannel.on('getVideoDetail',res => {
-      let videoData = res.video
-      this.setData({
-        videoData
-      })
-      console.log(videoData)
-    })
-    
+  onLoad: function (options) {
+
   },
 
   /**

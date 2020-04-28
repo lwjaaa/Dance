@@ -12,6 +12,8 @@
             
         </swiper>
         <!-- <view hover-class="{{'btn-tap'}}" class="btn btn-last">ls</view> -->
-        <view hover-class="{{'btn-tap'}}" class="btn btn-next">nx</view>
+        <view hover-class="{{'btn-tap'}}" class="btn btn-next">
+            <image class="icon" src="/assets/icon/next.svg"></image>
+        </view>
     </view>
 </view>

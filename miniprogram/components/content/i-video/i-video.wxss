@@ -5,9 +5,17 @@
     padding: 10rpx;
 }
 .i-video .body{
+    position: relative;
     width: 340rpx;
     height: 450rpx;
     background: #aaa;
+    overflow: hidden;
+}
+.i-video .body .img-post{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
 }
 .i-video .infor{
     box-sizing: border-box;

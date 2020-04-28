@@ -1,7 +1,7 @@
 /* components/content/game/game.wxss */
 .game{
     position: relative;
-    background: rgb(255, 205, 213);
+    background: #96C1E6;
     width: 540rpx;
     height: 960rpx;
 }
@@ -15,5 +15,6 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 50rpx;
-    background: rgb(13, 132, 230);
+    background: #00B26A;
+    opacity: 0.7;
 }

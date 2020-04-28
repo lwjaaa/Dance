@@ -2,7 +2,7 @@
 .user-infor{
     padding: 0 40rpx;
     --color-text:#424242;
-    --color-bg:#f6f6f6;
+    --color-bg:#96C1E6;
     --color-make:#BFC7DA;
     background: #fff;
     color: var(--color-text);
@@ -22,7 +22,7 @@
     min-width: 180rpx;
     height: 180rpx;
     border-radius: 50%;
-    background: pink;
+    background: var(--color-bg);
     margin-right: 60rpx;
     margin-left: 10rpx;
 }
@@ -39,18 +39,21 @@
     height: 80rpx;
     line-height: 80rpx;
     text-align: center;
-    background: pink;
+    background: var(--color-bg);
     color: #fff;
     font-weight: 600;
     font-size: 32rpx;
 }
 .user-infor .top .btn-user{
     background: #fff;
-    color: #666;
-    border: 1rpx solid #666;
+    color: #6d6d6d;
+    border: 1rpx solid #6d6d6d;
 }
 .user-infor .bottom{
     transform: translateY(-20rpx);
+}
+.user-infor .bottom .tag text{
+    margin-right: 30rpx;
 }
 
 .name{
@@ -86,7 +89,7 @@
 }
 .user-data>view>text.num{
     margin-top: 10rpx;
-    color: #f70;
+    color: var(--color-bg);
     font-size: 36rpx;
     font-weight: 600;
 }

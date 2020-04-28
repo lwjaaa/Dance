@@ -1,6 +1,6 @@
 /* miniprogram/pages/home/home.wxss */
 page{
-    --color-bg:pink;
+    --color-bg:#96C1E6;
     background: #fff;
 }
 .header{
@@ -20,7 +20,7 @@ page{
     padding: 0 20rpx;
 }
 .header .types .follow{
-    color: pink;
+    color: var(--color-bg);
     font-weight: 600;
 }
 .list{

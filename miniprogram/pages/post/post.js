@@ -26,6 +26,7 @@ Page({
     typeRange:[
       '舞蹈',
       '街舞',
+      '古典舞',
       '民族舞'
     ],
     typeIndex:0,
@@ -87,10 +88,25 @@ Page({
       postVideo(postData)
         .then(post => {
           // console.log("上传成功", post, res)
-          wx.showToast({
-            title: '上传成功',
+          this.setData({
+            postImg:"",
+            title:"",
+            des:"",
+            video:null
           })
           wx.hideLoading()
+          wx.showModal({
+            title:"上传成功",
+            content:"可在个人页查看发布状态",
+            cancelText:"好的",
+            confirmText:"查看状态",
+            confirmColor:"#96C1E6",
+            success:()=>{
+              wx.switchTab({
+                url: '/pages/profile/profile',
+              })
+            }
+          })
         })
         .catch(err => {
           console.log("上传失败",err)

@@ -20,7 +20,7 @@ Component({
   },
   attached(){
     video = wx.createVideoContext("video", this)
-    console.log(video)
+    // console.log(video)
     video.playing = true
   },
   

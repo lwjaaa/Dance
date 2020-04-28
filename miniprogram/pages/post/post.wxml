@@ -5,17 +5,19 @@
 
 		<view class="content">
 			<view class="title">
-                <icon type="info" size="{{20}}" color="{{'#aaa'}}"></icon>
+                <image src="/assets/icon/title.svg"></image>
 				<input model:value="{{title}}" placeholder="输入标题"></input>
 			</view>
 
 			<view class="des">
-                <icon type="info" size="{{20}}" color="{{'#aaa'}}"></icon>
+                <image src="/assets/icon/des.svg"></image>
 				<textarea model:value="{{des}}" placeholder="写下你现在的想法吧" />
             </view>
         </view>
 
-        <image src="{{postImg}}" class="img-post"></image>
+        <view class="img-post">
+            <image src="{{postImg}}" mode="widthFix" ></image>
+        </view>
 
 
     </view>
@@ -24,7 +26,7 @@
     <view class="type">
         <picker mode="selector" range="{{typeRange}}" model:value="{{typeIndex}}" >
             <view class="wraper">
-                <icon type="info" size="{{20}}" color="{{'#aaa'}}"></icon>
+                <image src="/assets/icon/type.svg"></image>
                 <text>分类：{{typeRange[typeIndex]}}</text>
             </view>
         </picker>

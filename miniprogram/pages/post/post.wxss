@@ -1,7 +1,7 @@
 /* pages/post/post.wxss */
 
 page{
-    --color-bg:#f6f6f6;
+    --color-bg:#96C1E6;
     --color-text:#01DC63;
     --color-style:#01DC63;
     background: #fff;
@@ -12,52 +12,64 @@ page{
     bottom: 100rpx;
     left: 0;
     right: 0;
-    padding: 0 40rpx;
+    padding: 0 30rpx;
     color: #424242;
 }
+.page image{
+    display: block;
+    width: 50rpx;
+    height: 50rpx;
+    margin-right: 30rpx;
+}
 .top{
-    box-sizing: border-box;
-    width: 100%;
     display: flex;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #d5d5d5;
 }
-icon{
-    margin-right: 20rpx;
-}
+
 .top .img-post{
-    flex: 0 0 auto;
+    flex: 0 0 300rpx;
     width: 270rpx;
     min-width: 270rpx;
-    height: 480rpx;
-    background: #aaa;
+    max-width: 270rpx;
+    height: 270rpx;
+    min-height: 270rpx;
+    max-height: 480rpx;
+    background: #eee;
+    margin: 0;
+}
+.top .img-post image{
+    width: 100%;
+    height: auto;
 }
 .top .content{
-    max-width: 400rpx;
-    box-sizing: border-box;
-    flex: 0 0 auto;
+    width: 420rpx;
     padding: 20rpx 0;
 }
 /* 标题 */
 .top .content .title{
     display: flex;
-    padding: 20rpx 0 20rpx 20rpx;
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #d5d5d5;
     font-weight: 600;
+    padding: 30rpx 0;
 }
 /* 描述 */
 .top .content .des{
     display: flex;
-    padding: 40rpx 0 20rpx 20rpx;
+    text-indent: 80rpx;
+    padding: 30rpx 0;
+}
+.top .content .des image{
+    position: absolute;
 }
 /*  */
 .type{
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #d5d5d5;
 }
 .type .wraper{
     display: flex;
     padding: 30rpx 0;
-    height: 40rpx;
-    line-height: 40rpx;
+    height: 50rpx;
+    line-height: 50rpx;
 }
 .type .wraper icon,
 .type .wraper text{
@@ -65,17 +77,17 @@ icon{
 }
 
 .bottom{
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
+    bottom: 0;
     padding-bottom: 30rpx;
     display: flex;
     justify-content: center;
-    bottom: 0;
 }
 .btn{
     box-sizing: border-box;
-    background: var(--color-style);
+    background: var(--color-bg);
     border-radius: 50%;
     text-align: center;
     width: 120rpx;
@@ -87,5 +99,5 @@ icon{
     margin: 0 20rpx;
 }
 .btn-post{
-    background: #f40;
+    background: #00B26A;
 }

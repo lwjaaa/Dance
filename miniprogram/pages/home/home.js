@@ -1,18 +1,27 @@
 // miniprogram/pages/home/home.js
+import {getUserVideos} from "../../network/videos.js"
+let _openid = getApp().globalData._openid
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    videos:[]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    getUserVideos(_openid).then(res => {
+      let videos = res.data
+      this.setData({
+        videos
+      })
+      console.log(videos)
+      
+    })
   },
 
   /**

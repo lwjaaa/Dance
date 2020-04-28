@@ -14,13 +14,11 @@
 </view>
 
 <view class="list">
-    <i-video />
-    <i-video />
-    <i-video />
-    <i-video />
-    <i-video />
-    <i-video />
-    <i-video />
+    <i-video 
+    wx:for="{{videos}}" wx:key="_id"
+    video="{{item}}"
+    />
+ 
 
 
 </view>

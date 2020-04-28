@@ -1,8 +1,8 @@
 /* pages/profile/childComps/userVieos/user-videos.wxss */
 .user-videos{
     --color-text:#424242;
-    --color-bg:#f6f6f6;
-    background: var(--color-bg);
+    --color-bg:#96C1E6;
+    background: #fff;
     color: var(--color-text);
 }
 .tab-control{
@@ -11,11 +11,13 @@
     position: sticky;
     background: #fff;
     top: 0;
+    box-shadow: 0 5rpx 5rpx rgba(0, 0, 0, .2);
+    /* margin-bottom: 5rpx; */
 }
 .tab-control view{
     box-sizing: border-box;
     width: 33.333%;
-    height: 80rpx;
+    height: 90rpx;
     border-top: 1px solid #d5d5d5;
     line-height: 80rpx;
     font-weight: 500;
@@ -23,11 +25,12 @@
     text-align: center;
 }
 .tab-control .bar{
+    border: none;
     position: absolute;
     width: 33.333%;
     height: 15rpx;
     border-radius: 10rpx;
-    background: pink;
+    background: var(--color-bg);
     bottom: 0;
     transition: all .3s;
 }

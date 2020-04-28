@@ -2,7 +2,9 @@
 .search-btn{
     width: 100rpx;
     height: 100rpx;
-    background: rgba(0, 0, 0, .3);
+    background: #fff;
+    box-sizing: border-box;
+    padding: 25rpx;
 }
 .search-btn .icon{
     width: 100%;

@@ -27,6 +27,7 @@
   <view class="bottom">
     <view class="des">{{userInfor.des}}</view>
     <view class="tag">
+      <text>{{userInfor.sex === 0 ? '男' : '女'}}</text>
       <text>{{userInfor.age}}</text>
       <text>{{userInfor.city}}</text>
     </view>
